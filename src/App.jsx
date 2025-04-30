@@ -6,12 +6,14 @@ import Project from './Components/Project'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
 import AboutMe from './Components/AboutMe'
+import { HashRouter } from 'react-router-dom'
 
 
 
 export default function App(){
   return(
     <>
+    <HashRouter>
     <div className="w-ful">
         {/* Navbar */}
         <div className="">
@@ -50,6 +52,8 @@ export default function App(){
             <Footer />
         </div>
     </div>
+
+    </HashRouter>
 </>
   )
 
